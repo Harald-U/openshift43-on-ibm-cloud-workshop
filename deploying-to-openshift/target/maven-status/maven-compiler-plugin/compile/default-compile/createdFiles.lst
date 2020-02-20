@@ -1,0 +1,4 @@
+com/ibm/authors/Author.class
+com/ibm/authors/AuthorsApplication.class
+com/ibm/authors/GetAuthor.class
+com/ibm/authors/HealthEndpoint.class
