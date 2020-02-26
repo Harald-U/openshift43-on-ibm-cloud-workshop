@@ -12,7 +12,15 @@ Note: In order to run this workshop, you need an [IBM Cloud account](https://clo
 
 This workshop demonstrates how to build a microservice with Java and how to deploy it to OpenShift on the IBM Cloud.
 
-The microservice is kept as simple as possible so that it can be used as a starting point for other microservices. The microservice has been developed with Jakarta EE and [Eclipse MicroProfile](https://microprofile.io/).
+The microservice is kept as simple as possible so that it can be used as a starting point for other microservices. The microservice has been developed with Jakarta EE and [Eclipse MicroProfile](https://microprofile.io/). It is part of our [Cloud Native Starter](https://github.com/IBM/cloud-native-starter) project which basically consists of 3 microservices:
+
+![architecture](images/cns-architecture.png)
+
+The web application Web-APP (frontend) requests data from Web-API. Web-API retreives a list of articles (title and authors name) from the Articles service, and for every author it retrieves details (Blog URL and Twitter handle) from the Authors service. In this lab we only use the Authors service.
+
+This would be the frontend:
+
+![frontend](images/frontend.png)
 
 There are [various ways to deploy applications to OpenShift](http://heidloff.net/article/deploying-open-liberty-microservices-openshift/). The options have different advantages and disadvantages which are explained in the following labs.
 
