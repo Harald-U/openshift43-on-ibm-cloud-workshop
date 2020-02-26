@@ -16,7 +16,7 @@ The microservice is kept as simple as possible so that it can be used as a start
 
 ![architecture](images/cns-architecture.png)
 
-The web application Web-APP (frontend) requests data from Web-API. Web-API retreives a list of articles (title and authors name) from the Articles service, and for every author it retrieves details (Blog URL and Twitter handle) from the Authors service. In this lab we only use the Authors service.
+The web application Web-App (frontend) requests data from Web-API. Web-API retreives a list of articles (title and authors name) from the Articles service, and for every author it retrieves details (Blog URL and Twitter handle) from the Authors service. In this lab we only use the Authors service.
 
 This would be the frontend:
 
