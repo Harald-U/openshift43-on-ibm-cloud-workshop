@@ -10,12 +10,12 @@ In this workshop we create a microservice that has been implemented with Java EE
 
 The microservice has been kept as simple as possible, so that it can be used as a starting point for other microservices. It contains the following functionality:
 
-* Image with OpenJ9, OpenJDK, Open Liberty and MicroProfile: [Dockerfile](../deploying-to-openshift/Dockerfile)
-* Maven project: [pom.xml](../pom.xml)
-* Open Liberty server configuration: [server.xml](../deploying-to-openshift/liberty/server.xml)
-* Health endpoint: [HealthEndpoint.java](../deploying-to-openshift/src/main/java/com/ibm/authors/HealthEndpoint.java)
-* Kubernetes yaml files: [deployment.yaml](../deploying-to-openshift/deployment/deployment.yaml) and [service.yaml](../deploying-to-openshift/deployment/service.yaml)
-* Sample REST GET endpoint: [AuthorsApplication.java](../deploying-to-openshift/src/main/java/com/ibm/authors/AuthorsApplication.java), [GetAuthor.java](../deploying-to-openshift/src/main/java/com/ibm/authors/GetAuthor.java) and [Author.java](../deploying-to-openshift/src/main/java/com/ibm/authors/Author.java)
+* Image with OpenJ9, OpenJDK, Open Liberty and MicroProfile: [Dockerfile](deploying-to-openshift/Dockerfile)
+* Maven project: [pom.xml](deploying-to-openshift/pom.xml)
+* Open Liberty server configuration: [server.xml](deploying-to-openshift/liberty/server.xml)
+* Health endpoint: [HealthEndpoint.java](deploying-to-openshift/src/main/java/com/ibm/authors/HealthEndpoint.java)
+* Kubernetes yaml files: [deployment.yaml](deploying-to-openshift/deployment/template.deployment.yaml) and [service.yaml](deploying-to-openshift/deployment/service.yaml)
+* Sample REST GET endpoint: [AuthorsApplication.java](deploying-to-openshift/src/main/java/com/ibm/authors/AuthorsApplication.java), [GetAuthor.java](deploying-to-openshift/src/main/java/com/ibm/authors/GetAuthor.java) and [Author.java](deploying-to-openshift/src/main/java/com/ibm/authors/Author.java)
 
 This service provides a REST API 'getauthor'. Normally we would use a database but in this example we just simulate with local sample data. With this small example we touch the following topics:
 
@@ -36,7 +36,7 @@ For the image we use a stack of open source components to run the Java microserv
 
 Read the article [How to build and run a Hello World Java Microservice](http://heidloff.net/article/how-to-build-and-run-a-hello-world-java-microservice/) to learn more.
 
-In the [Dockerfile](../deploying-to-openshift/Dockerfile) we define how to build the container image. For detailed information check the [Dockerfile documentation](https://docs.docker.com/engine/reference/builder/)
+In the [Dockerfile](deploying-to-openshift/Dockerfile) we define how to build the container image. For detailed information check the [Dockerfile documentation](https://docs.docker.com/engine/reference/builder/)
 
 When we build a new container image we usually start with an existing container image that already contains a minimum of the configuration we need, for example the OS, the Java version or even more. For this we search [DockerHub](https://hub.docker.com/search?q=maven&type=image&image_filter=official) or on the internet to find a starting point which fits to our needs. 
 
