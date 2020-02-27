@@ -1,3 +1,17 @@
+
+# This repo is no longer active! 
+
+![warning](images/warning.png)
+
+I have moved the workshop into the IBM Github Repo here:
+
+[https://github.com/IBM/openshift-on-ibm-cloud-workshops](https://github.com/IBM/openshift-on-ibm-cloud-workshops)
+
+# No pull requests in this repo, please!
+
+---
+
+
 ![logo](images/os_logo.png)
 
 [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/docs/openshift?topic=openshift-why_openshift) is an extension of the IBM Cloud Kubernetes Service where IBM manages the OpenShift Container Platform for you. 
